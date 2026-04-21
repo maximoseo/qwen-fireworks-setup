@@ -1,0 +1,38 @@
+{
+  "modelProviders": {
+    "openai": [
+      {
+        "id": "accounts/fireworks/models/qwen3p6-plus",
+        "name": "Qwen3.6 Plus (Fireworks AI)",
+        "baseUrl": "https://api.fireworks.ai/inference/v1",
+        "description": "Qwen3.6 Plus — hybrid thinking model via Fireworks AI",
+        "envKey": "FIREWORKS_API_KEY"
+      },
+      {
+        "id": "accounts/fireworks/models/qwen3-coder-480b-a35b-instruct",
+        "name": "Qwen3 Coder 480B (Fireworks AI)",
+        "baseUrl": "https://api.fireworks.ai/inference/v1",
+        "description": "Qwen3 Coder 480B — large coding model via Fireworks AI",
+        "envKey": "FIREWORKS_API_KEY"
+      },
+      {
+        "id": "accounts/fireworks/models/qwen2p5-coder-32b-instruct",
+        "name": "Qwen2.5 Coder 32B (Fireworks AI)",
+        "baseUrl": "https://api.fireworks.ai/inference/v1",
+        "description": "Qwen2.5 Coder 32B — fast coding model via Fireworks AI",
+        "envKey": "FIREWORKS_API_KEY"
+      }
+    ]
+  },
+  "env": {
+    "FIREWORKS_API_KEY": "YOUR_FIREWORKS_API_KEY_HERE"
+  },
+  "security": {
+    "auth": {
+      "selectedType": "openai"
+    }
+  },
+  "model": {
+    "name": "accounts/fireworks/models/qwen3p6-plus"
+  }
+}
